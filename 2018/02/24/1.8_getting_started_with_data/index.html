@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Kate">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kai&#39;s Tech Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="python把数据视作解决问题过程的关键。在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。 Data items 在面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="内置核心数据类型">
+<meta property="og:url" content="http://yoursite.com/2018/02/24/1.8_getting_started_with_data/index.html">
 <meta property="og:site_name" content="Kai&#39;s Tech Blog">
-<meta property="og:description" content="Kate">
+<meta property="og:description" content="python把数据视作解决问题过程的关键。在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。 Data items 在面">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-02-24T15:06:18.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kai&#39;s Tech Blog">
-<meta name="twitter:description" content="Kate">
+<meta name="twitter:title" content="内置核心数据类型">
+<meta name="twitter:description" content="python把数据视作解决问题过程的关键。在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。 Data items 在面">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/24/1.8_getting_started_with_data/"/>
 
 
 
 
 
-  <title>Kai's Tech Blog</title>
+  <title>内置核心数据类型 | Kai's Tech Blog</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/24/1.8_getting_started_with_data/" itemprop="url">内置核心数据类型</a></h1>
+          <h1 class="post-title" itemprop="name headline">内置核心数据类型</h1>
         
 
         <div class="post-meta">
@@ -293,7 +291,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-24T22:36:10+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-24T14:36:10+00:00">
                 2018-02-24
               </time>
             
@@ -353,19 +351,121 @@
       
 
       
-        
-          <p>python把数据视作解决问题过程的关键。<br>在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.<br>Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。</p>
+        <p>python把数据视作解决问题过程的关键。<br>在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.<br>Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。</p>
 <p>Data items 在面向对象的程序中被叫做objects<br>一个对象（object）是一个类（class）的例子</p>
 <p>在这里我们省略介绍python中的内置numeric和boolean classes，主要说一下内置collection data types</p>
-<h2 id="Built-in-collection-data-types"><a href="#Built-in-collection-data-types" class="headerlink" title="Built-in collection data types"></a>Built-in collection data types</h2>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/24/1.8_getting_started_with_data/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<h2 id="Built-in-collection-data-types"><a href="#Built-in-collection-data-types" class="headerlink" title="Built-in collection data types"></a>Built-in collection data types</h2><a id="more"></a>
+<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>Operation Name</strong></th>
+<th style="text-align:center"><strong>Operator</strong></th>
+<th style="text-align:center"><strong>Explanation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">indexing</td>
+<td style="text-align:center">[ ]</td>
+<td style="text-align:center">Access an element of a sequence</td>
+</tr>
+<tr>
+<td style="text-align:center">concatenation</td>
+<td style="text-align:center">+</td>
+<td style="text-align:center">Combine sequences together</td>
+</tr>
+<tr>
+<td style="text-align:center">repetition</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">Concatenate a repeated number of times</td>
+</tr>
+<tr>
+<td style="text-align:center">membership</td>
+<td style="text-align:center">in</td>
+<td style="text-align:center">Ask whether an item is in a sequence</td>
+</tr>
+<tr>
+<td style="text-align:center">length</td>
+<td style="text-align:center">len</td>
+<td style="text-align:center">Ask the number of items in the sequence</td>
+</tr>
+<tr>
+<td style="text-align:center">slicing</td>
+<td style="text-align:center">[ : ]</td>
+<td style="text-align:center">Extract a part of a sequence</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A = [myList]*3</span><br><span class="line">print(A)</span><br><span class="line">myList[2]=45</span><br><span class="line">print(A)</span><br></pre></td></tr></table></figure>
+<p>Lists support a number of methods that will be used to build data structures. This Table  provides a summary. Examples of their use follow.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>Method Name</strong></th>
+<th style="text-align:center"><strong>Use</strong></th>
+<th style="text-align:center"><strong>Explanation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">append</td>
+<td style="text-align:center">alist.append(item)</td>
+<td style="text-align:center">Adds a new item to the end of a list</td>
+</tr>
+<tr>
+<td style="text-align:center">insert</td>
+<td style="text-align:center">alist.insert(i,item)</td>
+<td style="text-align:center">Inserts an item at the ith position in a list</td>
+</tr>
+<tr>
+<td style="text-align:center">pop</td>
+<td style="text-align:center">alist.pop()</td>
+<td style="text-align:center">Removes and returns the last item in a list</td>
+</tr>
+<tr>
+<td style="text-align:center">pop</td>
+<td style="text-align:center">alist.pop(i)</td>
+<td style="text-align:center">Removes and returns the ith item in a list</td>
+</tr>
+<tr>
+<td style="text-align:center">sort</td>
+<td style="text-align:center">alist.sort()</td>
+<td style="text-align:center">Modifies a list to be sorted</td>
+</tr>
+<tr>
+<td style="text-align:center">reverse</td>
+<td style="text-align:center">alist.reverse()</td>
+<td style="text-align:center">Modifies a list to be in reverse order</td>
+</tr>
+<tr>
+<td style="text-align:center">del</td>
+<td style="text-align:center">del alist[i]</td>
+<td style="text-align:center">Deletes the item in the ith position</td>
+</tr>
+<tr>
+<td style="text-align:center">index</td>
+<td style="text-align:center">alist.index(item)</td>
+<td style="text-align:center">Returns the index of the first occurrence of item</td>
+</tr>
+<tr>
+<td style="text-align:center">count</td>
+<td style="text-align:center">alist.count(item)</td>
+<td style="text-align:center">Returns the number of occurrences of item</td>
+</tr>
+<tr>
+<td style="text-align:center">remove</td>
+<td style="text-align:center">alist.remove(item)</td>
+<td style="text-align:center">Removes the first occurrence of item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Show-current-state-of-the-project"><a href="#Show-current-state-of-the-project" class="headerlink" title="Show current state of the project"></a>Show current state of the project</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<h3 id="Tracking-changes-of-files"><a href="#Tracking-changes-of-files" class="headerlink" title="Tracking changes of files"></a>Tracking changes of files</h3><p>To tell git to start tracking changes made to this new file, so first we need to ass this file to the staging area by using git add</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add xxx.py</span><br></pre></td></tr></table></figure>
+<h3 id="Store-changes"><a href="#Store-changes" class="headerlink" title="Store changes"></a>Store changes</h3><p>To store our staged changes, we run the commit command with a message describing what we’ve changed.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">'type the description of you changes in you file here'</span></span><br></pre></td></tr></table></figure>
+<p>最后贴上原始文件来源<br>References：<br><a href="http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html" target="_blank" rel="noopener">http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html</a></p>
+
       
     </div>
     
@@ -375,6 +475,30 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Kaifang Xu WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -382,159 +506,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/10/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kaifang Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kai's Tech Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/10/hello-world/" itemprop="url">Git</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-10T16:58:23+08:00">
-                2018-02-10
-              </time>
+              <a href="/2018/02/10/hello-world/" rel="next" title="Git">
+                <i class="fa fa-chevron-left"></i> Git
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/GitHub-and-Git/" itemprop="url" rel="index">
-                    <span itemprop="name">GitHub and Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>Welcome to my blog! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Initialize-a-git-repository-project"><a href="#Initialize-a-git-repository-project" class="headerlink" title="Initialize a git repository(project)"></a>Initialize a git repository(project)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/10/hello-world/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -544,129 +537,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/10/First/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kaifang Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kai's Tech Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/10/First/" itemprop="url">First</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-10T09:53:30+08:00">
-                2018-02-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Aloha"><a href="#Aloha" class="headerlink" title="Aloha"></a>Aloha</h1><h5 id="Hey-check-it-out-I-have-opened-my-first-Blog-will-move-some-stuff-on-it！"><a href="#Hey-check-it-out-I-have-opened-my-first-Blog-will-move-some-stuff-on-it！" class="headerlink" title="Hey check it out I have opened my first Blog, will move some stuff on it！"></a>Hey check it out I have opened my first Blog, will move some stuff on it！</h5>
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -674,6 +549,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -694,8 +573,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -778,6 +666,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Built-in-collection-data-types"><span class="nav-number">1.</span> <span class="nav-text">Built-in collection data types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#list"><span class="nav-number">1.1.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-current-state-of-the-project"><span class="nav-number">1.2.</span> <span class="nav-text">Show current state of the project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tracking-changes-of-files"><span class="nav-number">1.3.</span> <span class="nav-text">Tracking changes of files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Store-changes"><span class="nav-number">1.4.</span> <span class="nav-text">Store changes</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -918,6 +822,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

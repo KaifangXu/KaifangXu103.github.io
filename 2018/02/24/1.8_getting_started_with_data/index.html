@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Kai&#39;s Tech Blog">
 <meta property="og:description" content="python把数据视作解决问题过程的关键。在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。 Data items 在面">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-02-24T15:06:18.464Z">
+<meta property="og:updated_time" content="2018-02-24T15:20:07.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="内置核心数据类型">
 <meta name="twitter:description" content="python把数据视作解决问题过程的关键。在python以及任何其他面向对象的编程语言中，我们定义一个类（class）来描述数据的状态（the state）以及描述这个数据能做什么（the behavior）.Classes类似于抽象数据类型（abstract data types）因为一个class的用户只能看到一个数据（data item）的状态和behavior。 Data items 在面">
@@ -397,74 +397,13 @@
 </tbody>
 </table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A = [myList]*3</span><br><span class="line">print(A)</span><br><span class="line">myList[2]=45</span><br><span class="line">print(A)</span><br></pre></td></tr></table></figure>
-<p>Lists support a number of methods that will be used to build data structures. This Table  provides a summary. Examples of their use follow.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"><strong>Method Name</strong></th>
-<th style="text-align:center"><strong>Use</strong></th>
-<th style="text-align:center"><strong>Explanation</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">append</td>
-<td style="text-align:center">alist.append(item)</td>
-<td style="text-align:center">Adds a new item to the end of a list</td>
-</tr>
-<tr>
-<td style="text-align:center">insert</td>
-<td style="text-align:center">alist.insert(i,item)</td>
-<td style="text-align:center">Inserts an item at the ith position in a list</td>
-</tr>
-<tr>
-<td style="text-align:center">pop</td>
-<td style="text-align:center">alist.pop()</td>
-<td style="text-align:center">Removes and returns the last item in a list</td>
-</tr>
-<tr>
-<td style="text-align:center">pop</td>
-<td style="text-align:center">alist.pop(i)</td>
-<td style="text-align:center">Removes and returns the ith item in a list</td>
-</tr>
-<tr>
-<td style="text-align:center">sort</td>
-<td style="text-align:center">alist.sort()</td>
-<td style="text-align:center">Modifies a list to be sorted</td>
-</tr>
-<tr>
-<td style="text-align:center">reverse</td>
-<td style="text-align:center">alist.reverse()</td>
-<td style="text-align:center">Modifies a list to be in reverse order</td>
-</tr>
-<tr>
-<td style="text-align:center">del</td>
-<td style="text-align:center">del alist[i]</td>
-<td style="text-align:center">Deletes the item in the ith position</td>
-</tr>
-<tr>
-<td style="text-align:center">index</td>
-<td style="text-align:center">alist.index(item)</td>
-<td style="text-align:center">Returns the index of the first occurrence of item</td>
-</tr>
-<tr>
-<td style="text-align:center">count</td>
-<td style="text-align:center">alist.count(item)</td>
-<td style="text-align:center">Returns the number of occurrences of item</td>
-</tr>
-<tr>
-<td style="text-align:center">remove</td>
-<td style="text-align:center">alist.remove(item)</td>
-<td style="text-align:center">Removes the first occurrence of item</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Show-current-state-of-the-project"><a href="#Show-current-state-of-the-project" class="headerlink" title="Show current state of the project"></a>Show current state of the project</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
-<h3 id="Tracking-changes-of-files"><a href="#Tracking-changes-of-files" class="headerlink" title="Tracking changes of files"></a>Tracking changes of files</h3><p>To tell git to start tracking changes made to this new file, so first we need to ass this file to the staging area by using git add</p>
+<p>Lists support a number of methods that will be used to build data structures. This Table  provides a summary. Examples of their use follow.<br>以下表格是总结对于一个list可以进行的method操作<br><strong>Method Name</strong>|<strong>Use</strong>|<strong>Explanation</strong><br>:—–:|:—–:|:—–:<br>append|alist.append(item)|Adds a new item to the end of a list<br>insert|alist.insert(i,item)|Inserts an item at the ith position in a list<br>pop|alist.pop()|Removes and returns the last item in a list<br>pop|alist.pop(i)|Removes and returns the ith item in a list<br>sort|alist.sort()|Modifies a list to be sorted<br>reverse|alist.reverse()|Modifies a list to be in reverse order<br>del|del alist[i]|Deletes the item in the ith position<br>index|alist.index(item)|Returns the index of the first occurrence of item<br>count|alist.count(item)|Returns the number of occurrences of item<br>remove|alist.remove(item)|Removes the first occurrence of item</p>
+<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p>以下表格是总结对于一个String可以进行的method操作<br><strong>Method Name</strong>|<strong>Use</strong>|<strong>Explanation</strong><br>:—–:|:—–:|:—–:<br>center|astring.center(w)|Returns a string centered in a field of size w<br>count|astring.count(item)|Returns the number of occurrences of item in the string<br>ljust|astring.ljust(w)|Returns a string left-justified in a field of size w<br>lower|astring.lower()|Returns a string in all lowercase<br>rjust|astring.rjust(w)|Returns a string right-justified in a field of size w<br>find|astring.find(item)|Returns the index of the first occurrence of item<br>split|astring.split(schar)|Splits a string into substrings at schar<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></p>
+<h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h3><p>To tell git to start tracking changes made to this new file, so first we need to ass this file to the staging area by using git add</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add xxx.py</span><br></pre></td></tr></table></figure>
-<h3 id="Store-changes"><a href="#Store-changes" class="headerlink" title="Store changes"></a>Store changes</h3><p>To store our staged changes, we run the commit command with a message describing what we’ve changed.</p>
+<h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>To store our staged changes, we run the commit command with a message describing what we’ve changed.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">'type the description of you changes in you file here'</span></span><br></pre></td></tr></table></figure>
-<p>最后贴上原始文件来源<br>References：<br><a href="http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html" target="_blank" rel="noopener">http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html</a></p>
+<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><p>最后贴上原始文件来源<br>References：<br><a href="http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html" target="_blank" rel="noopener">http://interactivepython.org/courselib/static/pythonds/Introduction/GettingStartedwithData.html</a></p>
 
       
     </div>
@@ -676,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Built-in-collection-data-types"><span class="nav-number">1.</span> <span class="nav-text">Built-in collection data types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#list"><span class="nav-number">1.1.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Show-current-state-of-the-project"><span class="nav-number">1.2.</span> <span class="nav-text">Show current state of the project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tracking-changes-of-files"><span class="nav-number">1.3.</span> <span class="nav-text">Tracking changes of files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Store-changes"><span class="nav-number">1.4.</span> <span class="nav-text">Store changes</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Built-in-collection-data-types"><span class="nav-number">1.</span> <span class="nav-text">Built-in collection data types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#list"><span class="nav-number">1.1.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String"><span class="nav-number">1.2.</span> <span class="nav-text">String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tuple"><span class="nav-number">1.3.</span> <span class="nav-text">Tuple</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Set"><span class="nav-number">1.4.</span> <span class="nav-text">Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dictionary"><span class="nav-number">1.5.</span> <span class="nav-text">Dictionary</span></a></li></ol></li></ol></div>
             
 
           </div>
